@@ -1,0 +1,27 @@
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin respond-to($media) {
+   @if $media == xlarge-screen {
+     @media (min-width: $xl-large-screen) { 
+      @content; 
+    }
+  }
+   @else if $media == large-screen {
+     @media (min-width: $large-screen) { 
+      @content ; 
+    }
+  }
+    @else if $media == medium-screen {
+     @media (min-width: $medium-screen) { 
+      @content ; 
+    }
+  }
+  @else if $media == small-screen {
+     @media (max-width: $small-screen)  { 
+      @content ; 
+    }
+
+  }
+}

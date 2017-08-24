@@ -1,0 +1,41 @@
+.user-label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.user-text-input {
+	@include border-radius(3px);
+	border: 1px solid $silver;
+	width: 95%;
+	height: 200px;
+	margin-bottom: 10px;
+	padding: 5px;
+
+	@include respond-to(medium-screen) {
+        max-width: 400px;
+    }
+}
+
+
+.main-button {
+	@include border-radius(3px);
+	border: 1px solid $black;
+	display: block;
+	width: 98%;
+	color: $white;
+	font-weight: 500;
+	text-transform: capitalize;
+	background-color: $shuttle-gray;
+	border:none;
+	padding: 8px;
+
+	@include respond-to(medium-screen) {
+        max-width: 150px;
+    }
+
+}
+
+.error-message {
+	color: #b51313;
+}

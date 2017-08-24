@@ -1,0 +1,66 @@
+html{
+    font-size:10px; 
+}
+
+body {
+  @include font-size(1.6);
+  font-family: sans-serif;
+  color: $shuttle-gray;
+
+}
+
+
+.App {
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    @include respond-to(medium-screen) {
+        max-width: 1000px;
+    }
+}
+
+
+.input-section {
+    margin: 30px 0 40px;
+}
+
+.grid-output {
+  
+  &.table-view {
+      
+      th {
+        padding: 0.25em;
+        text-transform: uppercase;
+        border: 1px solid $silver;
+        text-align: left;
+      }
+
+      td {
+        padding: 15px;
+        border: 1px solid $silver;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      tr {
+
+            @include flexbox();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            @include justify-content (space-between)
+
+            @include respond-to(medium-screen) {
+              display:table-row;
+            }
+
+        th, td {
+            @include flex(1 1 150px);
+
+            @include respond-to(medium-screen) {
+                @include flex(none);
+            }
+        }
+      }
+}
+
+}
