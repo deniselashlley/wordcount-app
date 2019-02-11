@@ -1,13 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const propTypes = {
-	wordCount: PropTypes.number,
-	text: PropTypes.string,
-	commaCount: PropTypes.number,
-	fullstop: PropTypes.number
-}
-
 /**
  * Groups the wordArray by the first character of a word
  * and return the grouped list
@@ -22,7 +15,6 @@ function group(list) {
       return element;
   }, {});
 }
-
 
 /**
  * Render the word list in a table
@@ -91,6 +83,12 @@ function Result({text, wordCount, commaCount, fullstopCount}) {
 	);
 }
 
-Result.propTypes = propTypes;
+Result.propTypes = {
+	wordCount: PropTypes.number,
+	text: PropTypes.string,
+	commaCount: PropTypes.number,
+	fullstop: PropTypes.number
+}
+
 
 export default Result
