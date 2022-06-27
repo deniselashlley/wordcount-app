@@ -24,7 +24,7 @@
     "autoprefixer-stylus": "^0.14.0",
     "concurrently": "^3.5.0",
     "loadash": "^1.0.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "stylus": "^0.54.5"
   }
 }
